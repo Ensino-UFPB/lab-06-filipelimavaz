@@ -23,23 +23,16 @@
             <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
                 <fieldset>
                     <legend class="formulario__legenda">Informações básicas</legend>
-                    
-                    
                     <div class="input-container ">
                         <input name="nome" id="nome" class=" input" type="text" placeholder="Nome" data-tipo="nome" required>
                         <label class="input-label" for="nome">Nome</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
-
-
-
-
                     <div class="input-container">
                         <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
                         <label class="input-label" for="email">Email</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
-                    
                     <div class="input-container">
                         <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." data-tipo="senha" required>
                         <label class="input-label" for="senha">Senha</label>
@@ -56,6 +49,16 @@
                     <div class="input-container">
                         <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF" data-tipo="cpf" required>
                         <label class="input-label" for="cpf">CPF</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="telefone" id="telefone" class="input" type="text" placeholder="Telefone" pattern="^(\(\d{2}\)\d{4,5}-?\d{4}|\d{10,11})$" title="Insira um telefone válido com DDD. Exemplos: 83991313434, (83)991313434, (83)99131-3434, 8399131-3434" data-tipo="telefone" required>
+                        <label class="input-label" for="telefone">Telefone</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="instagram" id="instagram" class="input" type="text" placeholder="Instagram" pattern="^@\w{1,30}$" title="O Instagram deve começar com '@' seguido do nome de usuário." data-tipo="instagram" required>
+                        <label class="input-label" for="instagram">Instagram</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
